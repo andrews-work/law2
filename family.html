@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amiry Svehla | Law & Migration - Family & Individuals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900">
+
+    <!-- Header -->
+    <header class="flex items-center h-[15vh] px-10">
+        <a href="/" class="text-left no-underline">
+            <h1 class="text-3xl font-bold text-[#2a2fbe]">Amiry Svehla</h1>
+            <h2 class="text-xl text-gray-800">Law &amp; Migration</h2>
+        </a>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="bg-black text-white sticky top-0 z-50">
+        <div class="max-w-8xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+
+                <!-- Navigation Links (desktop) -->
+                <ul class="hidden xl:flex space-x-6 text-sm font-medium ml-auto mr-5">
+                    <li><a href="index.html" class="hover:underline">Home</a></li>
+                    <li><a href="family.html" class="hover:underline">Individuals + Families</a></li>
+                    <li><a href="business.html" class="hover:underline">Business + Skilled</a></li>
+                    <li><a href="refugee.html" class="hover:underline">Humanitarian + Refugee</a></li>
+                    <li><a href="court.html" class="hover:underline">Court + Appeals</a></li>
+                    <li><a href="team.html" class="hover:underline">Team</a></li>
+                    <li><a href="contact.html" class="hover:underline">Contact</a></li>
+                </ul>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="xl:hidden text-white focus:outline-none ml-auto" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation Links -->
+            <ul id="mobile-menu" class="xl:hidden hidden flex-col space-y-2 text-sm font-medium pt-4 pb-4">
+              <li><a href="index.html" class="block hover:underline">Home</a></li>
+              <li><a href="family.html" class="block hover:underline">Individuals + Families</a></li>
+              <li><a href="business.html" class="block hover:underline">Business + Skilled</a></li>
+              <li><a href="refugee.html" class="block hover:underline">Humanitarian + Refugee</a></li>
+              <li><a href="court.html" class="block hover:underline">Court + Appeals</a></li>
+              <li><a href="team.html" class="block hover:underline">Team</a></li>
+              <li><a href="contact.html" class="block hover:underline">Contact</a></li>
+          </ul>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- new section -->
+    <section class="w-full px-2 sm:px-6 lg:px-8 py-12">
+        <div class="flex flex-col lg:flex-row lg:space-x-8">
+          
+          <!-- Accordion Column -->
+          <div class="lg:w-1/3 space-y-6 overflow-y-auto max-h-[75vh] pr-4">
+
+            <h1 class="text-2xl text-center">Families & Individuals</h1>
+
+            <!-- Accordion item -->
+            <div>
+              <button 
+                aria-expanded="false" 
+                class="w-full flex justify-between items-center border-b border-gray-300 pb-2 font-semibold text-lg hover:text-blue-700 focus:outline-none"
+                onclick="toggleAccordion(this)"
+              >
+                <span>Student visas</span>
+                <span class="text-sm text-blue-600">Show more</span>
+              </button>
+              <div class="hidden mt-2 text-gray-700 leading-relaxed transition-all duration-300 ease-in-out">
+                <p>We can provide you advice and options for commencing or continuing your study in Australia. We can advise you on visa requirements including genuine temporary entrant requirement, financial capacity and health and character requirements.</p>
+                <p>We can assist to prepare your supporting documents and advise you on the requirements you need to meet as well as completing, submitting and monitoring your application.</p>
+                <p>We can explain the conditions of the student visa, including work rights, study requirements, and visa expiry dates as well as also advising on the consequences of breaching any visa conditions.</p>
+              </div>
+            </div>
+      
+            <!-- Accordion item -->
+            <div>
+              <button 
+                aria-expanded="false" 
+                class="w-full flex justify-between items-center border-b border-gray-300 pb-2 font-semibold text-lg hover:text-blue-700 focus:outline-none"
+                onclick="toggleAccordion(this)"
+              >
+                <span>Visitor Visas</span>
+                <span class="text-sm text-blue-600">Show more</span>
+              </button>
+              <div class="hidden mt-2 text-gray-700 leading-relaxed transition-all duration-300 ease-in-out">
+                <p>To apply for a visitor visa in Australia, you must meet the following requirements:</p>
+                <div class="pl-4 space-y-1">
+                  <p>- You intend to enter Australia for a temporary period and have no intention of staying in Australia permanently.</p>
+                  <p>- You have sufficient funds to support yourself during your stay in Australia, including for accommodation, food, and travel expenses.</p>
+                  <p>- You meet the health and character requirements set by the Department of Home Affairs.</p>
+                  <p>- You have a genuine purpose of visit, such as tourism, visiting family or friends, or attending business meetings.</p>
+                  <p>- You have no intention of working in Australia, except for limited volunteer work.</p>
+                </div>
+                <p>A lawyer can assist with the preparation and submission of the visa application, including gathering evidence and presenting it in a way that meets the Department of Home Affairs' requirements including complex applications.</p>
+              </div>
+            </div>
+      
+            <!-- Accordion item -->
+            <div>
+              <button 
+                aria-expanded="false" 
+                class="w-full flex justify-between items-center border-b border-gray-300 pb-2 font-semibold text-lg hover:text-blue-700 focus:outline-none"
+                onclick="toggleAccordion(this)"
+              >
+                <span>Citizenship</span>
+                <span class="text-sm text-blue-600">Show more</span>
+              </button>
+              <div class="hidden mt-2 text-gray-700 leading-relaxed transition-all duration-300 ease-in-out">
+                <p>We assist with all citizenship applications including citizenship by descent, citizenship by conferral, and evidence of Australian citizenship.</p>
+                <p>If you were born to an Australian citizen parent, were born in Australia and ordinarily resident until you were 10 years old or are a permanent resident who meets the requirements for citizenship contact us to apply for citizenship now.</p>
+              </div>
+            </div>
+      
+            <!-- Accordion item -->
+            <div>
+              <button 
+                aria-expanded="false" 
+                class="w-full flex justify-between items-center border-b border-gray-300 pb-2 font-semibold text-lg hover:text-blue-700 focus:outline-none"
+                onclick="toggleAccordion(this)"
+              >
+                <span>Partner visas</span>
+                <span class="text-sm text-blue-600">Show more</span>
+              </button>
+              <div class="hidden mt-2 text-gray-700 leading-relaxed transition-all duration-300 ease-in-out">
+                <p>We can assist you with prospective marriage visas, onshore partner visas, and offshore partner visas.</p>
+                <p>You may be eligible for these visas if you are engaged, married, or in a de-facto relationship with an Australian citizen or permanent resident. Contact us, and we can advise you what evidence is required to apply and assist with your application.</p>
+              </div>
+            </div>
+      
+            <!-- Accordion item -->
+            <div>
+              <button 
+                aria-expanded="false" 
+                class="w-full flex justify-between items-center border-b border-gray-300 pb-2 font-semibold text-lg hover:text-blue-700 focus:outline-none"
+                onclick="toggleAccordion(this)"
+              >
+                <span>Other family visas</span>
+                <span class="text-sm text-blue-600">Show more</span>
+              </button>
+              <div class="hidden mt-2 text-gray-700 leading-relaxed transition-all duration-300 ease-in-out">
+                <p>There are a range of other family visas including Carer visas, Parent visas, child visas, and Remaining Relative visas. Contact us for advice about whether you meet the requirements for these visas.</p>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Image Column -->
+          <div class="lg:w-2/3 mt-8 lg:mt-0 flex justify-center items-start">
+            <img src="images/flinders.png" alt="Flinders" class="w-full h-auto rounded shadow-md object-cover"/>
+          </div>
+        </div>
+    </section>
+     
+    <!-- accordian -->
+    <script>
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            const isOpen = !content.classList.contains('hidden');
+            if (isOpen) {
+            content.classList.add('hidden');
+            button.setAttribute('aria-expanded', 'false');
+            button.querySelector('span:last-child').textContent = 'Show more';
+            } else {
+            content.classList.remove('hidden');
+            button.setAttribute('aria-expanded', 'true');
+            button.querySelector('span:last-child').textContent = 'Show less';
+            }
+        }
+    </script>
+      
+  <!-- footer -->
+  <footer class="bg-black text-white w-full">
+    <!-- Country Acknowledgment -->
+    <a href="https://www.wurundjeri.com.au" class="block w-full min-h-[5vh] max-h-[10vh] px-4 py-3 no-underline">
+      <div class="flex flex-wrap justify-evenly items-center gap-4">
+        <img src="images/logo5.png" alt="Wurundjeri Logo" class="h-8 w-auto" />
+        <h1 class="text-sm text-center max-w-7xl">
+          We pay our respects to the Wurundjeri people of the Kulin nation on whose lands we live and work
+        </h1>
+        <img src="images/logo5.png" alt="Wurundjeri Logo" class="h-8 w-auto" />
+      </div>
+    </a>
+  
+    <!-- Contact Info -->
+    <section class="bg-white text-black flex flex-wrap justify-evenly items-center py-4 px-4 text-sm">
+      <p class="px-2">admin@amirysvehla.com.au</p>
+      <p class="px-2">+61 412 028 720</p>
+      <p class="px-2">+61 400 452 995</p>
+      <p class="px-2">ABN: 606 705 394 41</p>
+    </section>
+  </footer>
+
+  <!-- mobile menu -->
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amiry Svehla | Law & Migration - Court & Appeals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900">
+
+    <!-- Header -->
+    <header class="flex items-center h-[15vh] px-10">
+        <a href="/" class="text-left no-underline">
+            <h1 class="text-3xl font-bold text-[#2a2fbe]">Amiry Svehla</h1>
+            <h2 class="text-xl text-gray-800">Law &amp; Migration</h2>
+        </a>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="bg-black text-white sticky top-0 z-50">
+        <div class="max-w-8xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+
+                <!-- Navigation Links (desktop) -->
+                <ul class="hidden xl:flex space-x-6 text-sm font-medium ml-auto mr-5">
+                    <li><a href="index.html" class="hover:underline">Home</a></li>
+                    <li><a href="family.html" class="hover:underline">Individuals + Families</a></li>
+                    <li><a href="business.html" class="hover:underline">Business + Skilled</a></li>
+                    <li><a href="refugee.html" class="hover:underline">Humanitarian + Refugee</a></li>
+                    <li><a href="court.html" class="hover:underline">Court + Appeals</a></li>
+                    <li><a href="team.html" class="hover:underline">Team</a></li>
+                    <li><a href="contact.html" class="hover:underline">Contact</a></li>
+                </ul>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="xl:hidden text-white focus:outline-none ml-auto" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation Links -->
+            <ul id="mobile-menu" class="xl:hidden hidden flex-col space-y-2 text-sm font-medium pt-4 pb-4">
+              <li><a href="index.html" class="block hover:underline">Home</a></li>
+              <li><a href="family.html" class="block hover:underline">Individuals + Families</a></li>
+              <li><a href="business.html" class="block hover:underline">Business + Skilled</a></li>
+              <li><a href="refugee.html" class="block hover:underline">Humanitarian + Refugee</a></li>
+              <li><a href="court.html" class="block hover:underline">Court + Appeals</a></li>
+              <li><a href="team.html" class="block hover:underline">Team</a></li>
+              <li><a href="contact.html" class="block hover:underline">Contact</a></li>
+          </ul>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- new section -->
+    <section class="w-full px-2 sm:px-6 lg:px-8 py-12">
+        <div class="flex flex-col lg:flex-row lg:space-x-8">
+    
+          <!-- Accordion Column -->
+          <div class="lg:w-1/3 space-y-6 overflow-y-auto max-h-[75vh] pr-4">
+            <h1 class="text-2xl text-center">Court & Appeals</h1>
+    
+            <!-- Accordion item: Administrative Appeals Tribunal -->
+            <div>
+              <button 
+                aria-expanded="false" 
+                class="w-full flex justify-between items-center border-b border-gray-300 pb-2 font-semibold text-lg hover:text-blue-700 focus:outline-none"
+                onclick="toggleAccordion(this)"
+              >
+                <span>Administrative Appeals Tribunal</span>
+                <span class="text-sm text-blue-600">Show more</span>
+              </button>
+              <div class="hidden mt-2 text-gray-700 leading-relaxed transition-all duration-300 ease-in-out">
+                <p>If your visa is refused in Australia and you wish to appeal to the Administrative Appeals Tribunal (AAT), we can help you understand your legal rights and prepare a strong case for appeal.</p>
+              </div>
+            </div>
+    
+            <!-- Accordion item: Cancellation -->
+            <div>
+              <button 
+                aria-expanded="false" 
+                class="w-full flex justify-between items-center border-b border-gray-300 pb-2 font-semibold text-lg hover:text-blue-700 focus:outline-none"
+                onclick="toggleAccordion(this)"
+              >
+                <span>Cancellation</span>
+                <span class="text-sm text-blue-600">Show more</span>
+              </button>
+              <div class="hidden mt-2 text-gray-700 leading-relaxed transition-all duration-300 ease-in-out">
+                <p>Under the Migration Act 1958 (Cth), the Department of Home Affairs has the power to cancel a visa if the visa holder does not meet the conditions of their visa, if they provide false information, or if they are found to be of bad character.</p><br>
+                <p>Some common reasons for cancellation include:</p><br>
+                <div class="pl-4 space-y-2">
+                  <p><strong>Section 116:</strong> This section allows the Minister to cancel a visa if the visa holder does not meet the character requirements, including if they have a criminal record or pose a threat to national security.</p>
+                  <p><strong>Section 501:</strong> This section allows the Minister to cancel a visa if the visa holder fails the character test, including if they have been sentenced to imprisonment for 12 months or more.</p>
+                  <p><strong>Section 116(1)(e):</strong> This section allows the Minister to cancel a visa if the visa holder provided false or misleading information in their visa application or during their stay in Australia.</p><br>
+                </div>
+                <p>If your visa is cancelled in Australia, a lawyer can help you understand your legal rights and options for appeal. They can assist with preparing and submitting your appeal application, evidence, and submissions. Cancellations are complex issues that require specific and considered legal advice.</p>
+              </div>
+            </div>
+    
+            <!-- Accordion item: Federal Court -->
+            <div>
+              <button 
+                aria-expanded="false" 
+                class="w-full flex justify-between items-center border-b border-gray-300 pb-2 font-semibold text-lg hover:text-blue-700 focus:outline-none"
+                onclick="toggleAccordion(this)"
+              >
+                <span>Federal Court</span>
+                <span class="text-sm text-blue-600">Show more</span>
+              </button>
+              <div class="hidden mt-2 text-gray-700 leading-relaxed transition-all duration-300 ease-in-out">
+                <p>Appealing to court is a stressful and overwhelming experience. We can represent and guide you throughout the process at the Federal Circuit and Family Court of Australia and the Federal Court of Australia.</p> <br>
+                <p>We can review the decision that led to the visa refusal and identify any legal errors or procedural irregularities that may have occurred. We have expert skills in judicial review and can assist with the preparation of the necessary submissions and legal arguments.</p>
+              </div>
+            </div>
+    
+          </div>
+    
+          <!-- Image Column -->
+          <div class="lg:w-2/3 mt-8 lg:mt-0 flex justify-center items-start">
+            <img src="images/park.png" alt="Court & Appeals" class="w-full h-auto rounded shadow-md object-cover"/>
+          </div>
+        </div>
+      </section>
+     
+    <!-- accordian -->
+    <script>
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            const isOpen = !content.classList.contains('hidden');
+            if (isOpen) {
+            content.classList.add('hidden');
+            button.setAttribute('aria-expanded', 'false');
+            button.querySelector('span:last-child').textContent = 'Show more';
+            } else {
+            content.classList.remove('hidden');
+            button.setAttribute('aria-expanded', 'true');
+            button.querySelector('span:last-child').textContent = 'Show less';
+            }
+        }
+    </script>
+      
+  <!-- footer -->
+  <footer class="bg-black text-white w-full">
+    <a href="https://www.wurundjeri.com.au" class="block w-full min-h-[5vh] max-h-[10vh] px-4 py-3 no-underline">
+      <div class="flex flex-wrap justify-evenly items-center gap-4">
+        <img src="images/logo5.png" alt="Wurundjeri Logo" class="h-8 w-auto" />
+        <h1 class="text-sm text-center max-w-7xl">
+          We pay our respects to the Wurundjeri people of the Kulin nation on whose lands we live and work
+        </h1>
+        <img src="images/logo5.png" alt="Wurundjeri Logo" class="h-8 w-auto" />
+      </div>
+    </a>
+  
+    <!-- Contact Info -->
+    <section class="bg-white text-black flex flex-wrap justify-evenly items-center py-4 px-4 text-sm">
+      <p class="px-2">admin@amirysvehla.com.au</p>
+      <p class="px-2">+61 412 028 720</p>
+      <p class="px-2">+61 400 452 995</p>
+      <p class="px-2">ABN: 606 705 394 41</p>
+    </section>
+  </footer>
+
+  <!-- mobile menu -->
+  <script>
+    const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>

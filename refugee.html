@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amiry Svehla | Law & Migration - Refugee & Humanitarian</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900">
+
+    <!-- Header -->
+    <header class="flex items-center h-[15vh] px-10">
+        <a href="/" class="text-left no-underline">
+            <h1 class="text-3xl font-bold text-[#2a2fbe]">Amiry Svehla</h1>
+            <h2 class="text-xl text-gray-800">Law &amp; Migration</h2>
+        </a>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="bg-black text-white sticky top-0 z-50">
+        <div class="max-w-8xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+
+                <!-- Navigation Links (desktop) -->
+                <ul class="hidden xl:flex space-x-6 text-sm font-medium ml-auto mr-5">
+                    <li><a href="index.html" class="hover:underline">Home</a></li>
+                    <li><a href="family.html" class="hover:underline">Individuals + Families</a></li>
+                    <li><a href="business.html" class="hover:underline">Business + Skilled</a></li>
+                    <li><a href="refugee.html" class="hover:underline">Humanitarian + Refugee</a></li>
+                    <li><a href="court.html" class="hover:underline">Court + Appeals</a></li>
+                    <li><a href="team.html" class="hover:underline">Team</a></li>
+                    <li><a href="contact.html" class="hover:underline">Contact</a></li>
+                </ul>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="xl:hidden text-white focus:outline-none ml-auto" id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation Links -->
+            <ul id="mobile-menu" class="xl:hidden hidden flex-col space-y-2 text-sm font-medium pt-4 pb-4">
+                <li><a href="index.html" class="block hover:underline">Home</a></li>
+                <li><a href="family.html" class="block hover:underline">Individuals + Families</a></li>
+                <li><a href="business.html" class="block hover:underline">Business + Skilled</a></li>
+                <li><a href="refugee.html" class="block hover:underline">Humanitarian + Refugee</a></li>
+                <li><a href="court.html" class="block hover:underline">Court + Appeals</a></li>
+                <li><a href="team.html" class="block hover:underline">Team</a></li>
+                <li><a href="contact.html" class="block hover:underline">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- new section -->
+    <section class="w-full px-2 sm:px-6 lg:px-8 py-12">
+        <div class="flex flex-col lg:flex-row lg:space-x-8">
+
+            <!-- Accordion Column (right) -->
+            <div class="lg:w-1/3 space-y-6 overflow-y-auto max-h-[75vh] pr-4">
+                <h1 class="text-2xl text-center">Refugee & Humanitarian </h1>
+
+                <!-- Accordion item -->
+                <div>
+                    <button 
+                        aria-expanded="false" 
+                        class="w-full flex justify-between items-center border-b border-gray-300 pb-2 font-semibold text-lg hover:text-blue-700 focus:outline-none"
+                        onclick="toggleAccordion(this)"
+                    >
+                        <span>Community Support Program</span>
+                        <span class="text-sm text-blue-600">Show more</span>
+                    </button>
+                    <div class="hidden mt-2 text-gray-700 leading-relaxed transition-all duration-300 ease-in-out">
+                        <p>
+                            The Community Support Program (CSP) is a program that supports a humanitarian applicant to come to Australia.
+                            This visa program requires the support of an Approved Proposing Organisation (APO), who will act as a sponsor.
+                        </p>
+                        <p>
+                            The APO is responsible for helping the visa applicant settle in Australia, including providing housing,
+                            employment assistance, and general support services.
+                        </p>
+                        <p>
+                            Applicants under the CSP must also meet health, character, and security requirements,
+                            and are typically expected to contribute to the costs associated with their resettlement.
+                        </p>
+                        <p>
+                            This program is ideal for families or communities wanting to directly support individuals in humanitarian need,
+                            but it is important to seek legal advice to ensure eligibility and compliance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Column (left) -->
+            <div class="lg:w-2/3 flex justify-center items-start mb-8 lg:mb-0">
+                <img src="images/beach.jpg" alt="Flinders" class="w-full h-auto max-h-[75vh] rounded shadow-md object-cover"/>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- accordion script -->
+    <script>
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            const isOpen = !content.classList.contains('hidden');
+            if (isOpen) {
+                content.classList.add('hidden');
+                button.setAttribute('aria-expanded', 'false');
+                button.querySelector('span:last-child').textContent = 'Show more';
+            } else {
+                content.classList.remove('hidden');
+                button.setAttribute('aria-expanded', 'true');
+                button.querySelector('span:last-child').textContent = 'Show less';
+            }
+        }
+    </script>
+
+    <!-- footer -->
+    <footer class="bg-black text-white w-full">
+        <a href="https://www.wurundjeri.com.au" class="block w-full min-h-[5vh] max-h-[10vh] px-4 py-3 no-underline">
+            <div class="flex flex-wrap justify-evenly items-center gap-4">
+                <img src="images/logo5.png" alt="Wurundjeri Logo" class="h-8 w-auto" />
+                <h1 class="text-sm text-center max-w-7xl">
+                    We pay our respects to the Wurundjeri people of the Kulin nation on whose lands we live and work
+                </h1>
+                <img src="images/logo5.png" alt="Wurundjeri Logo" class="h-8 w-auto" />
+            </div>
+        </a>
+
+        <!-- Contact Info -->
+        <section class="bg-white text-black flex flex-wrap justify-evenly items-center py-4 px-4 text-sm">
+            <p class="px-2">admin@amirysvehla.com.au</p>
+            <p class="px-2">+61 412 028 720</p>
+            <p class="px-2">+61 400 452 995</p>
+            <p class="px-2">ABN: 606 705 394 41</p>
+        </section>
+    </footer>
+
+    <!-- mobile menu -->
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
